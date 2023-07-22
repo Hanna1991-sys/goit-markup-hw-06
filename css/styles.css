@@ -27,12 +27,28 @@ body {
     background-color: var(--primary-color);
     color: var(--primary-text);
 }
+/* Mobil screen */
 .container{
-    width: 1158px;
+    min-width: 320px;
+    max-width: 428px;
     margin: 0 auto;
-
-   padding: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
 }
+
+/* Tablet screen */
+@media screen and (min-width: 768px){
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Desctop screen */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width:1158px;
+    }
+}
+
 /* Reset */
 h1,
 h2,
@@ -222,9 +238,24 @@ img {
   | Styles first section
   |============================
 */
+/* Mobil screen */
 .first-sec {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+    .container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+/* Desctop screen */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+    }
 }
 .visually-hidden {
     position: absolute;
